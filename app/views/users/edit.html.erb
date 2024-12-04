@@ -1,0 +1,14 @@
+<strong>Edit User:</strong><br><br>
+
+<%= form_with model: @user do |value| %>
+    <%= value.label :username,"Edit username here:" %>
+    <%= value.text_field :username ,placeholder: "yourname"%>
+    
+    <%= value.label :email %>
+    <%= value.email_field :email, placeholder: "name@gmail" %>
+
+    <%= value.label :password %>
+    <%= value.password_field :password %>
+
+    <%= value.submit "Update" %>
+<% end %>
